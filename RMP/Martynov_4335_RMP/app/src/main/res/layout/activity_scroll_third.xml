@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    android:background="@drawable/scrollthirdmain"
+    tools:context=".activityScrollThird">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#B3FFFFFF">
+        <ImageView
+            android:id="@+id/imageUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight = "1"
+            android:src="@mipmap/ic_userv2"
+            android:padding="5dp"
+            />
+        <TextView
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight = "1"
+            android:text="Главная"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight = "1"
+            android:text="Галерея"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight = "1"
+            android:text="Карта курортов"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollThirdSwipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingBottom="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#B3FFFFFF"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="Альта-Бадия Италия"
+                    android:textColor="@color/black"
+                    android:textSize="36dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="20dp"
+                    android:text="Почти все трассы сконцентрированы на широком, покрытом хвойным лесом, плато, немного в стороне расположена небольшая, но живописная зона катания Санта-Кроче (над курортом Педрачес)."
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+
+                    android:src="@drawable/scroll_third" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginTop="40dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Черных трасс здесь немного, большинство склонов отлично подходят для начинающих и катающихся на среднем уровне. Из более чем шестидесяти трасс с синей маркировкой только 14 находятся не между Сан-Кассиано и Корварой.
+Классическая черная трасса Gran Risa, на которой проходит этап Кубка мира, начинается от верхней станции подъемника Piz la Lla из Ла-Виллы. Короткая, но достаточно сложная трасса от Col Pradat до станции Edelweiss (чтобы попасть на нее, немного спуститесь из Кольфоско по синей трассе до нижней остановки подъемника) – еще один вариант для сильных лыжников.
+Для тех, кто катается на среднем уровне, в Альта Бадии есть множество красных трасс. Самая высокая и весьма живописная красная трасса спускается от станции Lagazuoi. Длинная красная трасса начинается от станции Piz Sorega (2003 м, подняться проще всего на кабинном подъемнике из Сан Кассьяно) и приходит прямо в Ла Виллу. "
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/scrollThirdBTN"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_corner"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Смотреть источник"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
